@@ -1,0 +1,9 @@
+.custom-icon {
+    font-size: 30px; /* Define o tamanho do ícone */
+    color: #4caf50;  /* Cor verde */
+  }
+
+.custom-header {
+    background-color: #4caf50; /* Cor desejada */
+    color: white;             /* Cor do texto */
+ }
