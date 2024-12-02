@@ -10,16 +10,16 @@ import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import {HiHome} from 'react-icons/hi2';
 import { HiInformationCircle } from "react-icons/hi2";
 import { RiCloseLargeLine } from "react-icons/ri";
+import { FaQuestion } from "react-icons/fa";
 
 import { useNavigate } from 'react-router-dom';
 import './Sidebar.css'
@@ -118,15 +118,16 @@ export default function Sidebar() {
   };
 
   const routes = [
-    { label: 'Home', icon: <HiHome className='custom-icon'/>, path: '/' },
-    { label: 'About', icon: <HiInformationCircle className='custom-icon'/>, path: '/about' },
+    { label: 'Bem Vindo', icon: <HiHome className='custom-icon'/>, path: '/' },
+    { label: 'Sobre', icon: <HiInformationCircle className='custom-icon'/>, path: '/about' },
+    { label: 'Libras', icon: <FaQuestion className='custom-icon'/>, path: '/intro'}
   ];
 
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
       <AppBar position="fixed" open={open} sx={{
-        backgroundColor: '#4caf50', // Cor de fundo
+        backgroundColor: '#4caf50',
       }}>
         <Toolbar>
           <IconButton
@@ -148,7 +149,13 @@ export default function Sidebar() {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Drawer variant="permanent" open={open}>
+      <Drawer variant="permanent" open={open}
+        sx={{
+          '& .MuiDrawer-paper': {
+            backgroundColor: '#4caf50',
+            color: 'white',
+          },
+        }}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <RiCloseLargeLine className='custom-icon'/>}
