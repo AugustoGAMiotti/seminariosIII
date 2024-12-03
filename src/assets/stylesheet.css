@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Libras 2020';
+    src: url('Libras2020.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.libras-text {
+    font-family: 'Libras 2020', sans-serif;
+    font-size: 40px;
+}
+
+.libras-style-text {
+    font-family: 'Libras 2020', sans-serif;
+    font-size: 100px;
+}
+
+.home-style{
+    font-size: 100px;
+    text-align: left;
+}

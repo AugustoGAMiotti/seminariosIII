@@ -6,8 +6,8 @@ const CustomBox = ({ children, ...props }) => {
   return (
     <Box
       display="flex"
-      justifyContent="center"
-      alignItems="center"
+      justifyContent="safe center"
+      alignItems="safe center"
       minHeight="100vh"
       style={{
         backgroundImage: `url(${background})`,
