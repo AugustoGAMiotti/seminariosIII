@@ -20,6 +20,7 @@ import {HiHome} from 'react-icons/hi2';
 import { HiInformationCircle } from "react-icons/hi2";
 import { RiCloseLargeLine } from "react-icons/ri";
 import { FaQuestion } from "react-icons/fa";
+import { SlNote } from "react-icons/sl";
 
 import { useNavigate } from 'react-router-dom';
 import './Sidebar.css'
@@ -119,8 +120,9 @@ export default function Sidebar() {
 
   const routes = [
     { label: 'Bem Vindo', icon: <HiHome className='custom-icon'/>, path: '/' },
-    { label: 'Sobre', icon: <HiInformationCircle className='custom-icon'/>, path: '/about' },
-    { label: 'Libras', icon: <FaQuestion className='custom-icon'/>, path: '/intro'}
+    { label: 'Libras', icon: <FaQuestion className='custom-icon'/>, path: '/intro'},
+    { label: 'Tradutor', icon: <SlNote className='custom-icon'/>, path: '/translate'},
+    { label: 'Sobre', icon: <HiInformationCircle className='custom-icon'/>, path: '/about' }
   ];
 
   return (
