@@ -12,12 +12,10 @@ function Intro() {
                 <h2>
                     Libras é a sigla para Língua Brasileira de Sinais, uma língua visual-gestual utilizada principalmente por pessoas surdas ou com deficiência auditiva no Brasil. 
                     É reconhecida oficialmente como a segunda língua do país, de acordo com a Lei nº 10.436/2002, que estabelece sua importância como meio de comunicação e expressão.
-                </h2>
-                <h2>
+                    <br />
                     A Libras tem raízes na Língua de Sinais Francesa (LSF), introduzida no Brasil em 1857 por Eduard Huet, 
                     um professor surdo francês que fundou o Instituto Nacional de Surdos-Mudos no Rio de Janeiro (hoje o Instituto Nacional de Educação de Surdos - INES).
-                </h2>
-                <h2>
+                    <br />
                     O projeto que deu origem à Lei nº 10.436/2002, foi apresentado pelo Deputado Federal Paulo Paim, em 1999. 
                     O projeto foi então aprovado pelo Congresso Nacional e sancionado pelo presidente Fernando Henrique Cardoso, em 24 de abril de 2002. 
                     A regulamentação estabelece que a linguagem seja aplicada e difundida em diversas áreas essenciais como educação, saúde, serviços publicos e certos eventos culturais.

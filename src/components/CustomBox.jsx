@@ -13,7 +13,7 @@ const CustomBox = ({ children, ...props }) => {
         backgroundImage: `url(${background})`,
         backgroundRepeat: 'repeat',
         backgroundSize: '400px 400px',
-        height: '100vh', 
+        height: '100%', 
         width: '100%',
     }}
 

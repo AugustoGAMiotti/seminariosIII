@@ -8,18 +8,19 @@ import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
+import IconButton from '@mui/material/IconButton';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import {HiHome, HiInformationCircle, HiBookOpen} from 'react-icons/hi2';
 import { RiCloseLargeLine } from "react-icons/ri";
 import { FaQuestion } from "react-icons/fa";
 import { SlNote } from "react-icons/sl";
+import { GiTeacher } from "react-icons/gi";
 
 import { useNavigate } from 'react-router-dom';
 import './Sidebar.css'
@@ -120,6 +121,7 @@ export default function Sidebar() {
   const routes = [
     { label: 'Bem Vindo', icon: <HiHome className='custom-icon'/>, path: '/' },
     { label: 'Libras', icon: <FaQuestion className='custom-icon'/>, path: '/intro'},
+    { label: 'Ensino', icon: <GiTeacher className='custom-icon'/>, path: '/learning'},
     { label: 'Tradutor', icon: <SlNote className='custom-icon'/>, path: '/translate'},
     { label: 'Dicionario', icon: <HiBookOpen className='custom-icon'/>, path: '/glossario' },
     { label: 'Sobre', icon: <HiInformationCircle className='custom-icon'/>, path: '/about' }
