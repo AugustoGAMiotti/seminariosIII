@@ -6,6 +6,7 @@ import About from './pages/About';
 import Intro from './pages/intro';
 import CustomBox from './components/CustomBox';
 import Translate from './pages/Translate';
+import Glossario from './API/Glossario';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="intro" element={<Intro/>} />
           <Route path="translate" element={<Translate/>}/>
+          <Route path="glossario" element={<Glossario/>}/>
         </Route>
       </Routes>
     </CustomBox>

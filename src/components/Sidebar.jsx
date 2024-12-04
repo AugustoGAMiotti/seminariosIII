@@ -16,8 +16,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import {HiHome} from 'react-icons/hi2';
-import { HiInformationCircle } from "react-icons/hi2";
+import {HiHome, HiInformationCircle, HiBookOpen} from 'react-icons/hi2';
 import { RiCloseLargeLine } from "react-icons/ri";
 import { FaQuestion } from "react-icons/fa";
 import { SlNote } from "react-icons/sl";
@@ -122,6 +121,7 @@ export default function Sidebar() {
     { label: 'Bem Vindo', icon: <HiHome className='custom-icon'/>, path: '/' },
     { label: 'Libras', icon: <FaQuestion className='custom-icon'/>, path: '/intro'},
     { label: 'Tradutor', icon: <SlNote className='custom-icon'/>, path: '/translate'},
+    { label: 'Dicionario', icon: <HiBookOpen className='custom-icon'/>, path: '/glossario' },
     { label: 'Sobre', icon: <HiInformationCircle className='custom-icon'/>, path: '/about' }
   ];
 
