@@ -13,7 +13,7 @@ function App() {
   return (
     <CustomBox>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/<seminariosIII>" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="intro" element={<Intro/>} />
