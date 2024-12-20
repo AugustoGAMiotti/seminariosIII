@@ -14,7 +14,7 @@ function App() {
     <CustomBox>
       <Routes>
         <Route path="/<seminariosIII>" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route path="/<seminariosIII/src/pages>" index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="intro" element={<Intro/>} />
           <Route path="translate" element={<Translate/>}/>
