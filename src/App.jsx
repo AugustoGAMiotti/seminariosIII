@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './layout/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -12,16 +12,18 @@ import Learning from './pages/Learning';
 function App() {
   return (
     <CustomBox>
-      <Routes>
-        <Route path="/<seminariosIII>" element={<Layout />}>
-          <Route path="/<seminariosIII/src/pages/Home>" index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="intro" element={<Intro/>} />
-          <Route path="translate" element={<Translate/>}/>
-          <Route path="glossario" element={<Glossario/>}/>
-          <Route path="learning" element={<Learning/>}/>
-        </Route>
-      </Routes>
+      <BrowserRouter basename="/seminariosIII">
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="intro" element={<Intro />} />
+        <Route path="translate" element={<Translate />} />
+        <Route path="glossario" element={<Glossario />} />
+        <Route path="learning" element={<Learning />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
     </CustomBox>
   );
 }
